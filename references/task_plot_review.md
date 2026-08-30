@@ -1,0 +1,5 @@
+# Plot review
+
+Round 1 was rejected for style. Scientific content, the two-pass boundary, blank entries, timings and offsets were correct, but a dark gradient and decorative warning icon did not meet the requested white scientific layout. The second prompt targeted only those visual issues while retaining the procedure and values.
+
+Round 2 passed after actual inspection of both the raw generated image and branded 1536×1024 result. The background and header are plain white, without warning or loop icons. The diagram correctly shows all twelve initial estimates before any advice, the three offset sets, half toward/away assignment and 45 / 3 / 0.3 / 1-second timings. All input fields are blank. Example values 1900 and 1915 appear only in the revision pass; no truth is shown. The six screen boxes are readable and do not overlap. The unmodified branding script added the fixed title, subtitle and borderless TaskBeacon logo. The README embeds the final image immediately under Task Flow. Revision question wording is shortened only for figure readability while preserving its referent. Total model rounds: two.

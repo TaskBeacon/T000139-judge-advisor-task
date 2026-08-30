@@ -1,0 +1,25 @@
+id: T000139
+slug: judge-advisor-task
+title: Judge–Advisor System
+acquisition: behavior
+variant: baseline
+license: MIT
+language: Chinese
+canonical: true
+cognitive_domain:
+- judgment
+- advice-taking
+- numerical-estimation
+maturity: smoke_tested
+version:
+  release_tag: v0.1.0
+contracts:
+  taps: v0.2.0
+runtime:
+  profile: psyflow
+  entrypoint: main.py
+evidence:
+- https://doi.org/10.1016/j.obhdp.2003.08.002
+- https://doi.org/10.1006/obhd.1995.1040
+maintainer:
+- TaskBeacon

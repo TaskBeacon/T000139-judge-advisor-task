@@ -1,0 +1,43 @@
+{
+  "task_path": "E:\\Taskbeacon\\T000139-judge-advisor-task",
+  "status": "fail",
+  "max_retries": 0,
+  "contracts_version": "v0.2.0",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2026-08-30T22:46:33Z",
+      "contracts_version": "v0.2.0",
+      "gates": [
+        {
+          "cmd": [
+            "D:\\Python310\\python.exe",
+            "E:\\Taskbeacon\\skills\\task-build\\scripts\\check_task_standard.py",
+            "--task-path",
+            "E:\\Taskbeacon\\T000139-judge-advisor-task"
+          ],
+          "cwd": "E:\\Taskbeacon\\T000139-judge-advisor-task",
+          "returncode": 0,
+          "stdout": "[task-build] task=E:\\Taskbeacon\\T000139-judge-advisor-task\n[task-build] PASS\n",
+          "stderr": "",
+          "gate": "standard"
+        },
+        {
+          "cmd": [
+            "psyflow-qa",
+            "E:\\Taskbeacon\\T000139-judge-advisor-task",
+            "--config",
+            "config/config_qa.yaml",
+            "--no-maturity-update"
+          ],
+          "cwd": "E:\\Taskbeacon",
+          "returncode": 1,
+          "stdout": "[psyflow-qa] FAIL RUNTIME_EXCEPTION: Task QA runtime exited with non-zero code: 1\n[psyflow-qa] Report: E:\\Taskbeacon\\T000139-judge-advisor-task\\outputs\\qa\\qa_report.json\n",
+          "stderr": "Traceback (most recent call last):\n  File \"E:\\Taskbeacon\\T000139-judge-advisor-task\\main.py\", line 79, in <module>\n    main()\n  File \"E:\\Taskbeacon\\T000139-judge-advisor-task\\main.py\", line 74, in main\n    run(parse_task_run_options(task_root=Path(__file__).resolve().parent, description='Judge\u2013Advisor System',\n  File \"E:\\Taskbeacon\\T000139-judge-advisor-task\\main.py\", line 21, in run\n    settings = TaskSettings.from_dict(cfg['task_config'])\n  File \"E:\\Taskbeacon\\psyflow\\psyflow\\TaskSettings.py\", line 294, in from_dict\n    raise ValueError(\nValueError: Inconsistent task config: trial_per_block=6 but ceil(total_trials/total_blocks)=3 (total_trials=6, total_blocks=2).\n",
+          "gate": "qa"
+        }
+      ],
+      "fixes": []
+    }
+  ]
+}

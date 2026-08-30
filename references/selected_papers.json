@@ -1,0 +1,29 @@
+[
+  {
+    "id": "Y2004",
+    "title": "Receiving other people’s advice: Influence and benefit",
+    "authors": [
+      "Ilan Yaniv"
+    ],
+    "year": 2004,
+    "journal": "Organizational Behavior and Human Decision Processes",
+    "doi_or_url": "https://doi.org/10.1016/j.obhdp.2003.08.002",
+    "citation_count": 0,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "primary_protocol_source",
+      "task_workflow",
+      "stimulus_specification",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": "User-provided Yaniv2004 primary. Full methods inspected in Hebrew University author manuscript https://ratio.huji.ac.il/files/dp405.pdf (2005discussion-paper cover; paper states appeared2004). Study3mechanical advice; nooriginalparticipantpool available. Citation count0meansunqueried.",
+    "source_kind": "url",
+    "source_locator": "https://doi.org/10.1016/j.obhdp.2003.08.002",
+    "attachments": {
+      "paper_pdf": null,
+      "methods_path": null
+    }
+  }
+]

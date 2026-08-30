@@ -1,0 +1,9 @@
+# Native visual review — PASS with scope
+
+On 2026-08-31, the actual 1280×800 PNGs for instruction, initial, transition, advice, final and goodbye were inspected. Chinese text was legible without overlap or clipping. The initial question contained no advice or truth. Revision displayed original estimate 1900 and computer advice 1915. The final editor's synthetic 1910 appeared below clearly separated labels. No fictitious adviser was presented.
+
+The six-item canary runs actual main/run_trial and StimUnit code with simulation responses. Textbox values are explicit validation fixtures, not human observations or production defaults. Capture calls `getMovieFrame(buffer='back')` immediately before the original window flip. OS capture failed and front-buffer images were black; both failures remain documented. This validates actual PsychoPy drawing, not physical monitor calibration or Return/IME submission. The known OS injection limitation from task140 was not repeatedly retried.
+
+All five build gates passed on attempt3. Attempt1 failed the core block/trial count constraint. Attempt2 identified missing key_list/seed_mode metadata. Configuration metadata was repaired and all five gates were rerun. Seven semantic tests passed, including actual main startup with a mocked GUI and a durable initial-pass CSV after an injected transition interruption. The first test attempt had an import-path failure, retained separately. The visual profile's shorter timings and synthetic prefills are not the production research profile.
+
+Native global onsets have whole-second precision in this environment. Cross-pass order must use shared-window flip_time/offset_flip_time and event order, rather than subsecond global differences. `pair_complete` means both passes were processed, not that both answers were valid.

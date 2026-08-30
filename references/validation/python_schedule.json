@@ -1,0 +1,70 @@
+[
+  {
+    "subject_id": 101,
+    "plans": [
+      "sputnik|near_toward|15",
+      "telephone|far_toward|70",
+      "wright|far_away|72",
+      "apollo|near_toward|18",
+      "web|intermediate_away|40",
+      "eiffel|near_away|15",
+      "olympics|near_away|18",
+      "panama|far_toward|70",
+      "nobel|intermediate_toward|45",
+      "xray|intermediate_away|40",
+      "penicillin|intermediate_toward|43",
+      "gagarin|far_away|72"
+    ]
+  },
+  {
+    "subject_id": 102,
+    "plans": [
+      "nobel|far_toward|72",
+      "penicillin|near_away|15",
+      "sputnik|near_away|15",
+      "panama|near_toward|20",
+      "gagarin|near_toward|20",
+      "eiffel|far_away|75",
+      "web|intermediate_toward|45",
+      "telephone|far_toward|70",
+      "wright|intermediate_toward|43",
+      "xray|far_away|70",
+      "apollo|intermediate_away|43",
+      "olympics|intermediate_away|43"
+    ]
+  },
+  {
+    "subject_id": 139,
+    "plans": [
+      "olympics|far_away|70",
+      "xray|intermediate_toward|43",
+      "gagarin|near_away|18",
+      "web|far_toward|70",
+      "panama|near_toward|20",
+      "nobel|intermediate_away|45",
+      "sputnik|intermediate_away|43",
+      "wright|near_away|15",
+      "penicillin|far_away|70",
+      "telephone|far_toward|72",
+      "apollo|near_toward|18",
+      "eiffel|intermediate_toward|45"
+    ]
+  },
+  {
+    "subject_id": 999,
+    "plans": [
+      "gagarin|far_toward|72",
+      "wright|far_toward|72",
+      "eiffel|far_away|72",
+      "sputnik|intermediate_toward|45",
+      "web|near_toward|18",
+      "xray|far_away|72",
+      "panama|near_away|20",
+      "telephone|intermediate_away|43",
+      "apollo|intermediate_away|43",
+      "olympics|near_away|18",
+      "nobel|intermediate_toward|40",
+      "penicillin|near_toward|18"
+    ]
+  }
+]

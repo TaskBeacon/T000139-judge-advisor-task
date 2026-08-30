@@ -1,0 +1,422 @@
+subinfo_fields:
+- name: subject_id
+  type: int
+  constraints:
+    min: 101
+    max: 999
+    digits: 3
+subinfo_mapping:
+  subject_id: 被试编号（3位数字）
+  Participant Information: 被试信息
+  registration_failed: 登记失败
+  registration_successful: 登记成功
+  invalid_input: '{field} 输入无效'
+window:
+  size:
+  - 1280
+  - 800
+  units: pix
+  screen: 0
+  bg_color: white
+  fullscreen: false
+  monitor_width_cm: 35.5
+  monitor_distance_cm: 60
+task:
+  task_name: Judge–Advisor System
+  save_path: ./outputs/human
+  language: Chinese
+  voice_enabled: false
+  voice_name: zh-CN-YunyangNeural
+  total_blocks: 1
+  total_trials: 6
+  trial_per_block: 6
+  conditions:
+  - near_toward
+  - near_away
+  - intermediate_toward
+  - intermediate_away
+  - far_toward
+  - far_away
+  condition_weights: null
+  item_ids:
+  - eiffel
+  - panama
+  - xray
+  - penicillin
+  - wright
+  - telephone
+  items:
+    eiffel:
+      question: 埃菲尔铁塔竣工并举行落成仪式是哪一年？
+      truth: 1889
+      source_url: https://www.toureiffel.paris/en/news/130-years/1889-2019-130-years-amazement
+    panama:
+      question: 巴拿马运河正式通航是哪一年？
+      truth: 1914
+      source_url: https://pancanal.com/en/panama-canal-turns-90/
+    xray:
+      question: 伦琴发现X射线是哪一年？
+      truth: 1895
+      source_url: https://www.nobelprize.org/prizes/themes/the-dual-nature-of-light-as-reflected-in-the-nobel-archives
+    penicillin:
+      question: 弗莱明首次发现青霉素的抗菌作用是哪一年？
+      truth: 1928
+      source_url: https://www.nobelprize.org/uploads/2018/06/fleming-lecture.pdf
+    wright:
+      question: 莱特兄弟首次成功进行有动力、可控的飞机飞行是哪一年？
+      truth: 1903
+      source_url: https://www.nps.gov/places/6-first-flights-december-17-1903.htm
+    telephone:
+      question: 贝尔获得美国第174465号电话相关专利是哪一年？
+      truth: 1876
+      source_url: https://www.loc.gov/everyday-mysteries/technology/item/who-is-credited-with-inventing-the-telephone/
+    nobel:
+      question: 第一届诺贝尔奖颁发是哪一年？
+      truth: 1901
+      source_url: https://www.nobelprize.org/about/
+    gagarin:
+      question: 加加林首次进入太空并绕地球飞行是哪一年？
+      truth: 1961
+      source_url: https://science.nasa.gov/resource/yuri-gagarin-first-human-in-space/
+    apollo:
+      question: 阿波罗11号首次实现人类登月是哪一年？
+      truth: 1969
+      source_url: https://www.nasa.gov/mission/apollo-11/
+    sputnik:
+      question: 苏联发射第一颗人造地球卫星斯普特尼克1号是哪一年？
+      truth: 1957
+      source_url: https://www.nasa.gov/history/dawn-of-the-space-age/
+    web:
+      question: 伯纳斯-李在欧洲核子研究中心提出万维网最初方案是哪一年？
+      truth: 1989
+      source_url: https://home.cern/world-wide-web-35/
+    olympics:
+      question: 雅典举办第一届现代奥林匹克运动会是哪一年？
+      truth: 1896
+      source_url: https://olympicgames.culture.gov.gr/en/revival.html
+  distance_offsets:
+    near:
+    - 15
+    - 18
+    - 20
+    intermediate:
+    - 40
+    - 43
+    - 45
+    far:
+    - 70
+    - 72
+    - 75
+  overall_seed: 139031
+  material_version: original-history-2026-08-31-v1
+  advice_provenance: disclosed_computer_generated
+  numeric_limit: 1000000000
+  plausible_year_min: 1000
+  plausible_year_max: 2026
+  submit_key: return
+  continue_key: space
+  synthetic_fixture: true
+  synthetic_text_by_phase_item:
+    initial:
+      eiffel: '1900'
+      panama: '1900'
+      xray: '1900'
+      penicillin: '1900'
+      wright: '1900'
+      telephone: '1900'
+    final:
+      eiffel: '1910'
+      panama: '1910'
+      xray: '1910'
+      penicillin: '1910'
+      wright: '1910'
+      telephone: '1910'
+  passes: 2
+  key_list:
+  - return
+  - space
+  seed_mode: same_across_sub
+  delta: 0
+timing:
+  initial_duration: 0.5
+  final_duration: 0.5
+  advice_duration: 0.15
+  saved_duration: 0.05
+  unavailable_duration: 0.15
+stimuli:
+  instruction:
+    type: text
+    font: SimHei
+    text: '年份估计与建议
+
+
+      第一部分：独立回答十二道历史年份题，请不要查资料。
+
+      输入你认为的公历年份（整数），不填单位或逗号；按回车提交。
+
+      每次最多四十五秒。空白或格式错误会记为无效，不会要求重填。
+
+      时间到仍未提交的文字只保存为草稿，不会当作估计。
+
+
+      第二部分：再次回答同样的问题，同时看到你的原估计和一条建议。
+
+      建议由电脑按预设规则生成，不是其他人的真实回答，也不保证准确。
+
+      你可以采纳、部分采纳或不采纳；最终回答需要重新输入并按回车提交。
+
+      不会显示正确答案、对错或个人评分，没有准确性奖金。
+
+
+      按空格键开始。'
+    color: black
+    height: 25
+    wrapWidth: 1100
+    pos:
+    - 0
+    - 0
+  transition:
+    type: text
+    font: SimHei
+    text: '独立估计部分结束
+
+
+      下面会按相同顺序再次呈现这些问题。
+
+      先查看你的原估计和电脑生成的建议，再输入最终年份。
+
+      建议不是其他人的真实回答，不保证准确。
+
+      若之前没有有效提交，本题不会显示建议或要求最终回答。
+
+
+      按空格键继续。'
+    color: black
+    height: 26
+    wrapWidth: 1100
+    pos:
+    - 0
+    - 0
+  question:
+    type: text
+    font: SimHei
+    text: '{question}'
+    color: black
+    height: 28
+    wrapWidth: 1100
+    pos:
+    - 0
+    - 245
+  initial_label:
+    type: text
+    font: SimHei
+    text: 请输入你的独立估计（公历年份）
+    color: black
+    height: 26
+    wrapWidth: 1100
+    pos:
+    - 0
+    - 115
+  initial_editor:
+    type: textbox
+    text: ''
+    font: SimHei
+    color: black
+    pos:
+    - 0
+    - 15
+    size:
+    - 650
+    - 75
+    letterHeight: 30
+    alignment: left
+    editable: true
+    fillColor: white
+    borderColor: '#777777'
+    borderWidth: 1
+  initial_hint:
+    type: text
+    font: SimHei
+    text: 整数；回车提交
+    color: black
+    height: 20
+    wrapWidth: 1100
+    pos:
+    - 0
+    - -90
+  own_estimate:
+    type: text
+    font: SimHei
+    text: 你的原估计：{initial} 年
+    color: black
+    height: 28
+    wrapWidth: 1100
+    pos:
+    - 0
+    - 135
+  recommendation:
+    type: text
+    font: SimHei
+    text: 电脑生成的建议：{advice} 年
+    color: black
+    height: 30
+    wrapWidth: 1100
+    pos:
+    - 0
+    - 45
+  provenance:
+    type: text
+    font: SimHei
+    text: '建议按预设规则生成，不是他人的真实回答。
+
+      不保证准确；是否采纳由你决定。'
+    color: black
+    height: 22
+    wrapWidth: 1100
+    pos:
+    - 0
+    - -95
+  final_own:
+    type: text
+    font: SimHei
+    text: 你的原估计：{initial} 年
+    color: black
+    height: 26
+    wrapWidth: 1100
+    pos:
+    - 0
+    - 155
+  final_advice:
+    type: text
+    font: SimHei
+    text: 电脑生成的建议：{advice} 年
+    color: black
+    height: 28
+    wrapWidth: 1100
+    pos:
+    - 0
+    - 85
+  final_provenance:
+    type: text
+    font: SimHei
+    text: 程序生成，非他人回答；不保证准确。
+    color: black
+    height: 21
+    wrapWidth: 1100
+    pos:
+    - 0
+    - 20
+  final_label:
+    type: text
+    font: SimHei
+    text: 请输入你的最终估计（公历年份）
+    color: black
+    height: 25
+    wrapWidth: 1100
+    pos:
+    - 0
+    - -55
+  final_editor:
+    type: textbox
+    text: ''
+    font: SimHei
+    color: black
+    pos:
+    - 0
+    - -125
+    size:
+    - 650
+    - 65
+    letterHeight: 30
+    alignment: left
+    editable: true
+    fillColor: white
+    borderColor: '#777777'
+    borderWidth: 1
+  final_hint:
+    type: text
+    font: SimHei
+    text: 整数；回车提交
+    color: black
+    height: 20
+    wrapWidth: 1100
+    pos:
+    - 0
+    - -210
+  saved:
+    type: text
+    font: SimHei
+    text: 回答已记录。
+    color: black
+    height: 26
+    wrapWidth: 1100
+    pos:
+    - 0
+    - 0
+  unavailable:
+    type: text
+    font: SimHei
+    text: '本题初始估计不可用，或无法在允许范围内生成建议。
+
+      保留原记录，不呈现建议或收集最终估计。'
+    color: black
+    height: 26
+    wrapWidth: 1100
+    pos:
+    - 0
+    - 0
+  good_bye:
+    type: text
+    font: SimHei
+    text: '任务完成，谢谢参与。
+
+
+      本任务使用电脑生成的建议，不是其他参与者的答案。
+
+      此处不显示正确答案或个人评分。
+
+
+      按空格键结束并保存数据。'
+    color: black
+    height: 26
+    wrapWidth: 1100
+    pos:
+    - 0
+    - 0
+triggers:
+  map:
+    experiment_start: 1
+    initial_onset: 10
+    initial_submit: 11
+    initial_timeout: 19
+    initial_saved_onset: 20
+    advice_onset: 30
+    final_onset: 40
+    final_submit: 41
+    final_timeout: 49
+    final_saved_onset: 50
+    unavailable_onset: 60
+    experiment_end: 99
+  driver:
+    type: mock
+  policy:
+    strict: false
+  timing:
+    post_delay_s: 0.0
+sim:
+  output_dir: outputs/scripted_sim
+  seed: 139031
+  participant_id: synthetic139
+  session_id: scripted_sim
+  log_path: outputs/scripted_sim/sim_events.jsonl
+  policy: strict
+  default_rt_s: 0.15
+  clamp_rt: true
+  enable_scaling: false
+  timing_scale: 1
+  min_frames: 2
+  responder:
+    type: scripted
+    kwargs:
+      key: return
+      rt_s: 0.15

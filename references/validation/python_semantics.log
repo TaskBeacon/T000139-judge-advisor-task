@@ -1,0 +1,21 @@
+test_actual_run_trial_two_pass_branches (test_semantics.Tests) ... ok
+test_all_subject_balanced_unique_plans (test_semantics.Tests) ... ok
+test_human_startup_and_pass1_interruption_persistence (test_semantics.Tests) ... ok
+test_input_values_drafts_and_bounds (test_semantics.Tests) ... ok
+test_mechanical_advice_ties_overshoot_and_bounds (test_semantics.Tests) ... ok
+test_no_human_prefill_truth_stimulus_or_phase_mismatch (test_semantics.Tests) ... ok
+test_signed_weights_missing_zero_and_overshoot (test_semantics.Tests) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.366s
+
+OK
+[INFO] Output directory already exists: ./outputs/human
+[INFO] Output directory already exists: ./outputs/human
+[INFO] Output directory already exists: ./outputs/human
+[INFO] Output directory already exists: C:\Users\frued\AppData\Local\Temp\jas139_qdz3d89w
+[INFO] Settings saved to C:\Users\frued\AppData\Local\Temp\jas139_qdz3d89w\sub-139_task_Judge–Advisor System_20260831_064713.json
+[INFO] Output directory already exists: ./outputs/human
+[INFO] Output directory already exists: ./outputs/human
+[INFO] Output directory already exists: ./outputs/human
+[INFO] Output directory already exists: ./outputs/human

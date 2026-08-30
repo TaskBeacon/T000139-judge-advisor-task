@@ -1,0 +1,20 @@
+test_semantics (unittest.loader._FailedTest) ... ERROR
+
+======================================================================
+ERROR: test_semantics (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_semantics
+Traceback (most recent call last):
+  File "D:\Python310\lib\unittest\loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "D:\Python310\lib\unittest\loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "E:\Taskbeacon\T000139-judge-advisor-task\tests\test_semantics.py", line 12, in <module>
+    from psyflow import load_config, TaskSettings, BlockUnit
+ImportError: cannot import name 'load_config' from 'psyflow' (unknown location)
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
